@@ -14,7 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: 'printing the inptus'
-        run: echo the test command is are ${{ github.event.inputs.test_command }}
+        run: |
+          pwd
+          echo the test command is are ${{ github.event.inputs }}
       # - uses: ./action-a
         # with:
           # MY_NAME: "Frozen"
