@@ -17,7 +17,7 @@ jobs:
         run: |
           echo "first echo here"
           echo pwd
-          echo the tags are ${{ github.events.inputs }}
+          echo the test command is are ${{ github.events.inputs.test_command }}
       # - uses: ./action-a
         # with:
           # MY_NAME: "Frozen"
